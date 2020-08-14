@@ -1,0 +1,29 @@
+.side-bar-right{
+    background-color:white;
+    margin-right:0px !important;
+    margin-left:4px;
+    box-shadow: -1px 1px 8px black;
+    border-radius: 5px 0px 0px 5px;
+    padding-top:20px;
+    position: relative;
+    min-width:180px;
+}
+.log-bar{
+    list-style-type: none;
+    color: white;
+    padding-left:5px;
+    font-size: 12px;
+}
+.log-bar li{
+    margin:5px 5px;
+    background-color:rgb(56, 56, 78);
+    padding:5px 0px 5px 5px;
+}
+.ping-log-info{
+    text-align: center;
+    background-color:#1ABC9C;
+    padding:10px 0px;
+    margin:0px 5px;
+    border-radius: 10px;
+    color:white;
+}
