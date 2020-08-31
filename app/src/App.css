@@ -33,4 +33,7 @@ display:flex;
     bottom:-80px !important;
     left:0px !important;
 }
+.side-bar-right{
+    height:auto !important;
+}
 }

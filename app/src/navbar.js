@@ -2,6 +2,21 @@ import React,{Component} from 'react';
 import './navbar.css';
 
 class navbar extends Component{
+    constructor(){
+        super();
+        this.state={
+            name:''
+        };
+    }
+    componentDidMount(){
+        fetch('/users/username')
+        .then((response)=>response.json())
+        .then((data)=>{
+            this.setState({
+                name:data.name,
+            })
+        })
+    }
     render(){
         return(
             <nav>
@@ -12,8 +27,8 @@ class navbar extends Component{
     </div>
     </div>
     <div className="user">
-    <span class="material-icons">account_circle</span> 
-     <span className="user-text">Abhishek</span>
+    <span className="material-icons">account_circle</span> 
+     <span className="user-text">{this.state.name}</span>
     </div>
 </nav>
         )

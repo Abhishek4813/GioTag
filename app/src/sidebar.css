@@ -24,8 +24,12 @@
     background-color:#1ABC9C;
     color:white;
     border-radius: 5px;
+    cursor: pointer;
 
 
+}
+.map-links li:hover{
+background-color:#139177;
 }
 .ping_button{
     height:50px;
@@ -39,6 +43,9 @@
     right:-80px;
     z-index:9999;
     cursor: pointer;
+}
+.ping_button:hover{
+    box-shadow: 2px 2px 8px black;
 }
 .decorator{
     display:block;
